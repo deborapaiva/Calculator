@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="calc">
+    <h3>Calculadora</h3>
+
+    <div id="operations">
+      <div id="current-operation"></div>
+    </div>
+    <div id="buttons-container">
+      <button class="number" onclick="insert('7')">7</button>
+      <button class="number" onclick="insert('8')">8</button>
+      <button class="number" onclick="insert('9')">9</button>
+      <button id="delete-btn" onclick="back('')">DEL</button>
+      <button class="number" onclick="insert('4')">4</button>
+      <button class="number" onclick="insert('5')">5</button>
+      <button class="number" onclick="insert('6')">6</button>
+      <button class="operator" onclick="insert('+')">+</button>
+      <button class="number" onclick="insert('1')">1</button>
+      <button class="number" onclick="insert('2')">2</button>
+      <button class="number" onclick="insert('3')">3</button>
+      <button class="operator" onclick="insert('-')">-</button>
+      <button class="operator" onclick="insert('.')">.</button>
+      <button class="number" onclick="insert('0')">0</button>
+      <button class="operator" onclick="insert('/')">/</button>
+      <button class="operator" onclick="insert('*')">x</button>
+      <button id="reset-btn" onclick="clean('')" >RESET</button>
+      <button id="equal-btn" onclick="calc('')">=</button>
+  </div>
+  </div>
+</body>
+</html>
