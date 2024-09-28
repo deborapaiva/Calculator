@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+body{
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#template-theme {
+    display: flex;
+    color: white;
+}
+
+#calc{
+    width: 400px;
+    padding: .5em;
+    color: hsl(221, 14%, 31%);
+    display: flex;
+    flex-direction: column;
+}
+
+#calc h3{
+    font-size: .8em;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1em;
+
+}
+
+#operations {
+    text-align: right;
+}
+
+#current-operation {
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow: break-word;
+    color:  hsl(0, 0%, 100%);
+    background-color:hsl(223, 31%, 20%);
+    margin-bottom: 0.3em;
+    border-radius: 20px;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+#buttons-container button {
+    height: 1.5em;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0.25em;
+    border-radius: 6px;
+}
+
+#reset-btn, #equal-btn {
+    grid-column: span 2;
+}
+
+#equal-btn {
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-bottom: 2px solid hsl(6, 70%, 34%);
+}
+
+.operator, .number {
+    border: none;
+    border-bottom: 2px solid hsl(224, 28%, 35%);
+    color: hsl(224, 28%, 35%);
+}
+
+#delete-btn, #reset-btn {
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-bottom: 2px solid hsl(224, 28%, 35%);
+}
+
+#reset-btn:hover, #equal-btn:hover {
+    grid-column: span 2;
+}
+
+#equal-btn:hover {
+    background-color: hsl(28, 16%, 65%);
+    color: hsl(0, 0%, 100%);
+}
+
+#delete-btn:hover, #reset-btn:hover {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(0, 0%, 100%);
+}
+
