@@ -6,13 +6,13 @@ Realizar operações matemáticas como adição, subtração, multiplicação e 
 
 #### Screenshot
 
-Calculadora
+##### Calculadora
 <img src="./images/Calculadora.PNG">
 
-Botao ativo
+##### Botao ativo
 <img src="./images/CalculadoraActiveBottom.PNG">
 
-Visualizacao de funcionamento
+##### Visualizacao de funcionamento
 <img src="./images/CalculadoraShow.PNG">
 
 ### Tecnologias Utilizadas
